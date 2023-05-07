@@ -1,0 +1,249 @@
+@extends('tour.layouts.master')
+@section('title', 'Tour')
+@section('content')
+<img class="blog-bg-img" style="width: 100%;" src="images/md.png" alt="">
+   <!-- header section start -->
+   <div class="header_section" style="max-height: 800px;">
+      <div class="header_main">
+         <div class="mobile_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo_mobile"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a></div>
+               <div class="d-block">
+                  <h2 style="color:white; " class="mt-2">Georgia in Tour</h2>
+                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <img width="40px" style="border-radius: 70px;" src="images/w3.png">
+               </a>
+               <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+                  <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
+               </a>
+               <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                  <img width="40px" style="border-radius: 70px;" src="images/in2.png">
+               </a>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{route('tour_home')}}">Главная</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{route('tour_category')}}">Туры</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="container-fluid">
+            <div style="display: block;">
+               <div class="logo"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a>
+                  <h2 style="color:white;" class="mt-2">Georgia in Tour</h2>
+                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                       <img width="40px" style="border-radius: 70px;" src="images/w3.png">
+                    </a>
+                    <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+                       <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
+                    </a>
+                    <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                       <img width="40px" style="border-radius: 70px;" src="images/in2.png">
+                    </a>
+               </div>
+
+            </div>
+            <div class="menu_main">
+               <ul>
+                  <li class="active"><a href="{{route('tour_home')}}">Главная</a></li>
+                  <li><a href="{{route('tour_category')}}">Туры</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="banner_taital">Туры по Грузии с гидом-историком</h1>
+                     <p class="banner_text" style="padding-top: 80px;">Открывай страну вместе с нами</p>
+                     <div class="read_bt"><a href="#tour">Подробнее</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
+   <!-- header section end -->
+   <!-- services section start -->
+   <div class="services_section layout_padding">
+      <div class="container my" >
+         <h1 style="text-align: center;" class="services_taital" id="tour">Наши лучшие туры </h1>
+         <div class="services_section_2" >
+            <div class="row" style="justify-content:center;">
+               @foreach($tour as $item)
+               <div class="col-md-4 mt-4">
+                  <div ><img style="height: 300px; border-top-right-radius:25px; border-top-left-radius:25px" src="{{asset('images/'.$item->image)}}" class="services_img mb-3"></div>
+                  <div style="background-color: rgba(244, 237, 237, 0.4); border-top-left-radius: 25px; border-top-right-radius: 25px;">
+                     <h1 class="text-truncate" style="padding-left: 5%; padding-bottom:20px;">{{$item->name}}</h1>
+                  </div>
+                  <div class="d-flex pb-3" style="border-bottom-right-radius: 25px; background-color: rgba(244, 237, 237, 0.4); border-bottom-left-radius: 25px; justify-content:space-between">
+                     <div class="btn_main pl-2"><a href="{{route('tour_category_tour', $item->id)}}">О туре</a></div>
+                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$item->price}}$</h2></div>
+                  </div>
+               </div>
+               @endforeach
+               <div class="btn_main" style="text-align: center;"><a class="mt-5" href="{{route('tour_category')}}">Все туры</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- services section end -->
+   <!-- about section start -->
+   <div class="about_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="about_taital_main">
+                  <h1 class="about_taital">Кто мы?</h1>
+                  <p class="about_text">Мы - команда путешественников из разных городов России. Нас объединило одно -
+                  любовь к Грузии. К захватывающей дух природе, солнечной погоде и невероятно
+                  добрым людям. Мы поняли, что хотим познакомить с настоящей Грузией как можно больше ребят, которые приезжают в эту страну. И в первую очередь знакомить их через эмоции и впечатления.
+                  </p>
+               </div>
+            </div>
+            <div class="col-md-6 padding_right_0">
+               <div><img src="images/about-img.png" class="about_img"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- choose section start -->
+   <div class="choose_section layout_padding">
+      <div class="container" style="justify-content: center;">
+         <h1 class="choose_taital"> Варианты туров </h1>
+         
+         <div style="">
+            <div class="newsletter_box" style="background-color:white">
+               <h1><i class="fas fa-hiking"></i> Индивидуальные туры</h1>
+            </div>
+            <div class="newsletter_box" style="background-color:white">
+               <h1><i class="fas fa-users"></i> Групповые туры</h1>
+            </div>
+            <div class="newsletter_box" style="background-color:white">
+               <h1><i class="fas fa-mountain"></i> Поездки на джипах</h1>
+            </div>
+            <div class="newsletter_box" style="background-color:white">
+               <h1><i class="fas fa-motorcycle"></i> Поездки на мотоциклах</h1>
+            </div>
+            <div class="newsletter_box" style="background-color:white">
+               <h1><i class="fas fa-heart"></i> Венчание</h1>
+         </div>
+      </div>
+      </div>
+   </div>
+   <div class="container" >
+      <div class="row"><h1 class="mb-3 choose_taital" style="color:white"> Что входит в туры </h1></div>
+      <div class="row flex-wrap mb-5" style="border-radius: 15px; border:1px solid #6e6e6e; padding:30px; background-color:white">
+         <div class="col-sm ">
+            <h3>Что входит в наши туры:</h3>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Опытных гидов-историков, владеющих несколькими языками</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Собственный автопарк</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Все включено: билеты, еда и дегустации</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Уникальные 15-дневные туры</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Предоставление индивидуальных маршрутов по вашему выбору</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Организацию гостиниц и трансферов</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Бесплатное вино</h5>
+         </div>
+         <div class="col-sm ">
+            <h3>Что не входит в наши туры:</h3>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control">Минусы</h5>
+         </div>
+      </div>
+   </div>
+   <!-- choose section end -->
+   <div class="about_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 padding_right_0">
+               <div><img src="images/certi.jpeg" style="border-radius: 5px;" class="about_img"></div>
+            </div>
+            <div class="col-md-6">
+               <div class="about_taital_main">
+                  <h1 class="about_taital">Наши гиды</h1>
+                  <p class="about_text">Они состоят в гильдии гидов и обладают многолетним опытом работы. Отлично знают местные достопримечательности и культурные особенности, а также обладают глубокими знаниями истории. Кроме того гиды разговаривают на русском, турецком, грузинском и английском</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <!-- client section start -->
+   <div class="client_section layout_padding">
+      <div class="container">
+         <h1 class="client_taital">Отзывы наших клиентов</h1>
+         <div class="client_section_2">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item  active">
+                     <div class="row" >
+                        <div class="row col-md-6" style="padding-top:0;">
+                           <div class="col-md-3" style="margin-bottom: 50px;">
+                              <h4 class="client_name">Константин</h4>
+                              <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                           </div>
+                           <div class="col-md-6 ml-2 mb-2">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;" src="images/otz1.jpg">
+                           </div>
+                        </div>
+                        <div class="col-md-6 align-items-center">
+                           <p class="lorem_text" style="height: 300px;">Классные ребята! Они организовали для нас отличные поездки по горам, экскурсии по историческим местам. Я рекомендую их для тех, кто хочет получить яркие впечатления в Грузии</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" >
+                     <div class="row" >
+                        <div class="row col-md-6" style="padding-top:0;">
+                           <div class="col-md-3" style="margin-bottom: 50px;">
+                              <h4 class="client_name">Анна</h4>
+                              <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                           </div>
+                           <div class="col-md-6 ml-2 mb-2">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/otz2.jpg">
+                           </div>
+                        </div>
+                        <div class="col-md-6 align-items-center">
+                           <p class="lorem_text" style="height: 300px;">Я остался доволен туром. Мы посетили невероятно красивые места, попробовали лучшие блюда грузинской кухни и получили неоценимый опыт погружения в местную культуру. Большое спасибо georgiaintour за такие впечатления. </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" >
+                     <div class="row" >
+                        <div class="row col-md-6" style="padding-top:0;">
+                           <div class="col-md-3" style="margin-bottom: 50px;">
+                              <h4 class="client_name">Дмитрий</h4>
+                              <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                           </div>
+                           <div class="col-md-6 ml-2 mb-2">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/otz3.jpg">
+                           </div>
+                        </div>
+                        <div class="col-md-6 align-items-center">
+                           <p class="lorem_text" style="height: 300px;">Лучший способ узнать настоящую Грузию. Всем рекомендую. </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- client section start -->
+   @endsection
+   <script src="https://kit.fontawesome.com/765d268603.js" crossorigin="anonymous"></script>

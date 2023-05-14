@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class TourPhotoController extends Controller
 {
     public function TourPhoto(){
-        $tour = Tour::all();
+        $tour = Tour::all()->reverse();
         return view('admin/photos/index', compact('tour'));
     }
     public function TourPhotoAddShow($id){
@@ -24,6 +24,7 @@ class TourPhotoController extends Controller
         $image->move(public_path('images'), $filename);
         $photo = new TourPhoto();
         $photo->photo = $filename;
+        $photo->name = $request->name;
         $photo->tour_id = $request->tour_id;
         $photo->save();
         return redirect()->route('tour_photo', compact('tour'));

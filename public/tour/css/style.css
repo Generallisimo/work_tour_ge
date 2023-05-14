@@ -231,7 +231,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/ba22.mp4);
+    background-image: url(../images/head.mp4);
     height: auto;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
@@ -895,7 +895,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/ba1.mp4);
+    background-image: url(../images/foot.mp4);
     height: auto;
     /* padding-top: 250px; */
     background-size: 100% 100%;
@@ -1018,7 +1018,7 @@ button {
 }
 .blog-bg-img{
     position: absolute;
-    top: 3000;
+    top: 3200;
     left: 0; 
     z-index: -100;
 }
@@ -1049,16 +1049,16 @@ button {
 
 @media (max-width: 500px) {
     .blog-bg-img {
-        top: 4600px;
+        top: 5550px;
     }
 }
 @media (max-width: 380px) {
     .blog-bg-img {
-      top: 4750px;
+      top: 5700px;
     }
   }
 @media (max-width: 350px) {
     .blog-bg-img {
-      top: 4860px;
+      top: 6100px;
     }
   }

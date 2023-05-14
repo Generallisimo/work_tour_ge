@@ -24,23 +24,33 @@
               <div class="card-header">
                 <h3 class="card-title">New Photo</h3>
               </div>
-              <!-- /.card-header -->
-              <div class="form-input">{{$tour->name}}</div>
-              <!-- form start -->
-              <form id="quickForm" method="POST" action="{{route('tour_photo_add', $tour->id)}}" enctype="multipart/form-data">
-                @csrf
+              <div class="container">
+
+                <!-- /.card-header -->
                 <div class="form-group">
-                    <div class="custom-file">
-                      <input type="file" name="photo" class="custom-file-input" id="photo" required>
-                      <label class="custom-file-label" for="photo">Image tours</label>
+                      <label>Name Days</label>
+                      <div class="form-control" id="exampleInputEmail1">{{$tour->name}}</div>
                     </div>
-                    <input type="hidden" name="tour_id" value="{{$tour->id}}">
+                <!-- form start -->
+                <form id="quickForm" method="POST" action="{{route('tour_photo_add', $tour->id)}}" enctype="multipart/form-data">
+                  @csrf
+                  <div class="form-group">
+                      <label for="name">Name Photo</label>
+                      <input type="name" name="name" class="form-control" id="exampleInputEmail1" placeholder="Name photo">
                   </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
+                  <div class="form-group">
+                      <div class="custom-file">
+                        <input type="file" name="photo" class="custom-file-input" id="photo" required>
+                        <label class="custom-file-label" for="photo">Image tours</label>
+                      </div>
+                      <input type="hidden" name="tour_id" value="{{$tour->id}}">
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
             </div>
             <!-- /.card -->
             </div>

@@ -35,7 +35,15 @@
                   </div>
                   <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea type="text" name="description" class="form-control" id="exampleInputPassword1" placeholder="Enter description" rows="5"></textarea>
+                    <textarea style="height:400px" type="text" name="description" class="form-control" id="exampleInputPassword1" placeholder="Enter description" rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="descone">Description for money</label>
+                    <textarea style="height:200px" type="text" name="descone" class="form-control" id="exampleInputPassword1" placeholder="Enter descone" rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="desctwo">Description for tour</label>
+                    <textarea style="height:400px" type="text" name="desctwo" class="form-control" id="exampleInputPassword1" placeholder="Enter desctwo" rows="5"></textarea>
                   </div>
                   <div class="form-group">
                     <div class="custom-file">

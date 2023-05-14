@@ -13,7 +13,7 @@ class AdminTourController extends Controller
     public function AdminTour(){
         $days = Day::all();
         $categories = Category::all();
-        $tour = Tour::all();
+        $tour = Tour::all()->reverse();
         return view('admin/tours/index', compact('tour', 'days', 'categories'));
     }
     public function AdminTourAddShow(){
@@ -28,6 +28,8 @@ class AdminTourController extends Controller
         $tour = new Tour();
         $tour->name = $request->name;
         $tour->description = nl2br($request->description);
+        $tour->descone = nl2br($request->descone);
+        $tour->desctwo = nl2br($request->desctwo);
         $tour->price = $request->price;
         $tour->image = $images;
         $tour->day_id = $request->day_id;
@@ -50,6 +52,8 @@ class AdminTourController extends Controller
         $tour=Tour::findOrFail($tour_id);
         $tour->name = $request->name;
         $tour->description = $request->description;
+        $tour->descone = $request->descone;
+        $tour->desctwo = $request->desctwo;
         $tour->price = $request->price;
         $tour->category_id = $request->category_id;
         $tour->day_id = $request->day_id;

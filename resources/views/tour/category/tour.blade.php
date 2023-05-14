@@ -83,34 +83,37 @@
                </div>
             </div>
          </div>
-         <div class="align-self-end" style="justify-content: space-between; width: 80%; margin: 0 auto; display: flex; margin-top: 10px;">
+         <div style="justify-content: space-between; width: 80%; margin: 0 auto; display: flex; margin-top: 10px;">
             <div>
                <h4>Количество дней:</h4>
                <p style="margin: 0;">{{$tour->day->name}}</p>
                <h4 class="mt-2">Вид тура</h4>
                <p style="margin: 0;">{{$tour->category->name}}</p>
+               <h4 class="mt-2">Стоимость тура</h4>
+               <p style="margin: 0;">{{$tour->price}}₾</p>
             </div>
-            <div class="align-self-end">
-               <h3 style="margin: 0;">{{$tour->price}}$</h3>
+            <div>
+               <h4>Что входит в стоимость тура:</h4>
+               <p style="margin: 0;">{!! $tour->descone !!}</p>
             </div>
          </div>
                <!-- <div class="container d-flex" style="justify-content: end; margin-right:200px"><h1>Связаться по турам</h1></div> -->
          
          <div style="justify-content:space-around;display:flex" >
-            <div class="readmore_bt ml-3 " >
+            <div class="readmore_bt ml-3 " style="align-self: center;">
                <a class="text-truncate" href="{{route('tour_category')}}">&#60 Вернуться</a>
             </div>
             <div class="d-block" style="text-align: center;">
                <h1 class="text-truncate">Связаться по турам</h1>
                <div class=" ml-3 d-flex" >
-                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 bt">
-                     <img width="40px" style="border-radius: 70px;border: 3px solid black;" src="images/w.png">
+                  <a style="padding:5px; margin-top: 5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                     <img width="45px" src="images/ww1.png">
                   </a>
-                  <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 bt">
-                     <img width="40px" class="" style="border-radius: 70px;border: 3px solid black;" src="images/t.png">
+                  <a style="padding:5px; margin-top: 4px;"" href="https://t.me/georgiaintour" class="mr-2 ">
+                     <img width="50px" class="" src="images/tt1.png">
                   </a>
-                  <a class="bt" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
-                     <img width="40px" style="border-radius: 70px;border: 3px solid black;" src="images/i.png">
+                  <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                     <img width="55px" src="images/ii1.png">
                   </a>
                </div>
          </div>
@@ -118,13 +121,25 @@
       </div>
       <div class="container" style=" text-align: center; margin-top: 100px;margin-bottom:30px">
          
+      <h1>Инетресные факты о туре:</h1>
+            <div class="mt-2" style="text-align: start;">
+               <div class="overflow-auto max-height" style="max-height:375px; height:375px; border:1px solid rgb(231, 227, 227); border-radius:15px; background-color: rgb(254, 251, 251);">   
+                  <div  style="padding-left:5px">
+                     <h3 class="about_text" style="padding-top: 0; ">Достопримечательности тура:</h3>
+                     <p class="" style="color:black">{!! $tour->desctwo !!}</p>
+                  </div>
+               </div>
+            </div>
+
+
          @if($tour->photos->count() > 0)
-            <h1>Фото с туров</h1>
+            <h1 class="mt-5">Фото с туров</h1>
          @endif
          <div class="row ">
          @foreach($tour->photos as $photo)
                <div class="col-md-3  mt-3">
-                  <img  src="{{asset('images/'.$photo->photo)}}" style="height: 200px; width:300px" alt="">
+                  <img  src="{{asset('images/'.$photo->photo)}}" style="height: 200px; width:300px; border-radius:10px" alt="">
+                  <h3>{{$photo->name}}</h3>
          </div>
             @endforeach
          </div>

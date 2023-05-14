@@ -90,7 +90,7 @@
                   </div>
                   <div class="d-flex pb-3" style="border-bottom-right-radius: 25px; background-color: rgba(244, 237, 237, 0.4); border-bottom-left-radius: 25px; justify-content:space-between">
                      <div class="btn_main pl-2"><a href="{{route('tour_category_tour', $item->id)}}">О туре</a></div>
-                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$item->price}}$</h2></div>
+                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$item->price}}₾</h2></div>
                   </div>
                </div>
                @endforeach
@@ -102,7 +102,7 @@
    <!-- services section end -->
    <!-- about section start -->
    <div class="about_section layout_padding">
-      <div class="container-fluid">
+      <!-- <div class="container-fluid">
          <div class="row">
             <div class="col-md-6">
                <div class="about_taital_main">
@@ -115,6 +115,34 @@
             </div>
             <div class="col-md-6 padding_right_0">
                <div><img src="images/about-img.png" class="about_img"></div>
+            </div>
+         </div>
+      </div> -->
+      <div class="container">
+         <div class="d-flex" style="/* justify-content: center; */ max-width: ;">
+            <div class="" style="width: 80%; text-align: center; margin: 0 auto;">
+               <div class="" style="/* text-align: center; */ width: 100%;">
+                  <h1 class="about_taital" style="font-size: 50px;">Кто мы?</h1>
+                  <p class="about_text" style="font-size: 24px;">Команда, собранная из путешественников, проникнутых любовью к Грузии и ее богатому культурному наследию, готова поделиться своими знаниями и эмоциями с каждым, кто хочет по-настоящему познакомиться с этой удивительной страной. Нас объединяет желание открыть Грузию для всех желающих и рассказать о ее потрясающей природе, солнечной погоде и гостеприимных людях. Мы не просто проводим туры, мы делаем все возможное, чтобы наши гости почувствовали эмоции и впечатления, которые запомнятся надолго и заставят их вернуться в эту страну снова и снова.
+                  </p>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+
+   <div class="about_section layout_padding">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 padding_right_0">
+               <div><img src="images/c.jpg" style="border-radius: 25px;" class="about_img"></div>
+            </div>
+            <div class="col-md-6">
+               <div class="about_taital_main">
+                  <h1 class="about_taital">Наши гиды</h1>
+                  <p class="about_text">Наши гиды - профессионалы своего дела, которые обладают многолетним опытом работы и являются членами гильдии гидов. Они знают все местные достопримечательности, культурные особенности и исторические тайны, и смогут рассказать о них с увлечением и убедительностью. Наши гиды - настоящие эрудиты, обладающие глубокими знаниями о Грузии и ее народе. Кроме того, они свободно разговаривают на русском, турецком, грузинском и английском языках, что позволяет нашим гостям почувствовать себя уверенно и комфортно в любой ситуации. Наши гиды - ваш надежный друг и проводник в увлекательном путешествии по Грузии.</p>
+               </div>
             </div>
          </div>
       </div>
@@ -148,36 +176,23 @@
       <div class="row flex-wrap mb-5" style="border-radius: 15px; border:1px solid #6e6e6e; padding:30px; background-color:white">
          <div class="col-sm ">
             <h3>Что входит в наши туры:</h3>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Опытных гидов-историков, владеющих несколькими языками</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Собственный автопарк</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Все включено: билеты, еда и дегустации</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Уникальные 15-дневные туры</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Предоставление индивидуальных маршрутов по вашему выбору</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Организацию гостиниц и трансферов</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Бесплатное вино</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Опытные гидов-историков, владеющих несколькими языками и историческими знаниями</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Собственный автопарк, который обеспечивает комфортную и безопасную поездку</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Все билеты и приемы еды входят в стоимость тура, а также компания оплачивает винные дегустации</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Уникальные половнические 15-дневные туры</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Предоставление индивидуальных маршрутов по вашему выбору в течение 12 часов</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Организация гостиниц и трансфера из любого города или аэропорта.</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Бесплатное вино в дорогу для каждого клиента.</h5>
          </div>
          <div class="col-sm ">
             <h3>Что не входит в наши туры:</h3>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control">Минусы</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Не включены международные перелёты</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Не включена страховка на здоровье</h5>
          </div>
       </div>
    </div>
    <!-- choose section end -->
-   <div class="about_section layout_padding">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-6 padding_right_0">
-               <div><img src="images/certi.jpeg" style="border-radius: 5px;" class="about_img"></div>
-            </div>
-            <div class="col-md-6">
-               <div class="about_taital_main">
-                  <h1 class="about_taital">Наши гиды</h1>
-                  <p class="about_text">Они состоят в гильдии гидов и обладают многолетним опытом работы. Отлично знают местные достопримечательности и культурные особенности, а также обладают глубокими знаниями истории. Кроме того гиды разговаривают на русском, турецком, грузинском и английском</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+
    
    <!-- client section start -->
    <div class="client_section layout_padding">
@@ -199,7 +214,7 @@
                               <div class="quick_icon"><img src="images/quick-icon.png"></div>
                            </div>
                            <div class="col-md-6 ml-2 mb-2">
-                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;" src="images/otz1.jpg">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;" src="images/o2.jpg">
                            </div>
                         </div>
                         <div class="col-md-6 align-items-center">
@@ -215,7 +230,7 @@
                               <div class="quick_icon"><img src="images/quick-icon.png"></div>
                            </div>
                            <div class="col-md-6 ml-2 mb-2">
-                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/otz2.jpg">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/o4.jpg">
                            </div>
                         </div>
                         <div class="col-md-6 align-items-center">
@@ -231,7 +246,7 @@
                               <div class="quick_icon"><img src="images/quick-icon.png"></div>
                            </div>
                            <div class="col-md-6 ml-2 mb-2">
-                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/otz3.jpg">
+                              <img style="max-width: 160%; border-radius: 20px; height: 300px; width: 160%;"  src="images/o5.jpg">
                            </div>
                         </div>
                         <div class="col-md-6 align-items-center">

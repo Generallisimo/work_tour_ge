@@ -36,7 +36,15 @@
                   </div>
                   <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea type="text" name="description" class="form-control" id="exampleInputPassword1" placeholder="Enter description">{{$tour->description}}</textarea>
+                    <textarea style="height:400px" type="text" name="description" class="form-control" id="exampleInputPassword1" placeholder="Enter description">{{$tour->description}}</textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="descone">Description for money</label>
+                    <textarea style="height:400px" type="text" name="descone" class="form-control" id="exampleInputPassword1" placeholder="Enter descone">{{$tour->descone}}</textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="desctwo">Description for tour</label>
+                    <textarea style="height:400px" type="text" name="desctwo" class="form-control" id="exampleInputPassword1" placeholder="Enter desctwo">{{$tour->desctwo}}</textarea>
                   </div>
                   <div class="form-group">
                     <div class="custom-file">

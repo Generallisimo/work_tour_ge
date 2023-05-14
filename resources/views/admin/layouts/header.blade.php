@@ -63,7 +63,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="{{route('tour_photo')}}" class="nav-link">
-              <i class="nav-icon far fa-photo"></i>
+              <i class="nav-icon fa fa-camera" aria-hidden="true"></i>
               <p>Photo</p>
             </a>
           </li>
@@ -73,3 +73,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+  

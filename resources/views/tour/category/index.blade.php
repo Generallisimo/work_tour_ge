@@ -114,7 +114,7 @@
                   </div>
                   <div class="d-flex pb-3" style="border-bottom-right-radius: 25px; background-color: rgba(244, 237, 237, 0.4); border-bottom-left-radius: 25px; justify-content:space-between">
                      <div class="btn_main pl-2"><a href="{{route('tour_category_tour', $tour->id)}}">О туре</a></div>
-                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$tour->price}}$</h2></div>
+                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$tour->price}}₾</h2></div>
                   </div>
                </div>
                @endforeach

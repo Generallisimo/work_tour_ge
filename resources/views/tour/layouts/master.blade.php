@@ -11,9 +11,9 @@
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
    <title>@yield('title')</title>
-   <meta name="keywords" content="">
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <meta name="keywords" content="туры, Грузия, отдых, культура, гастрономия, путешествия">
+   <meta name="description" content="Компания туров по Грузии предлагает путешествия по удивительным местам, знакомство с культурой и гастрономией страны, а также отдых на море и в горах.">
+   <meta name="author" content="georgiatour">
    <!-- bootstrap css -->
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    <!-- style css -->

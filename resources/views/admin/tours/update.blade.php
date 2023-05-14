@@ -54,7 +54,7 @@
                   </div>
                   <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="number" name="price" class="form-control" id="exampleInputPassword1" placeholder="Enter price" value="{{$tour->price}}">
+                    <input type="text" name="price" class="form-control" id="exampleInputPassword1" placeholder="Enter price" value="{{$tour->price}}">
                   </div>
                   <div class="form-group row">
                   <label for="day_id">Дни:</label>

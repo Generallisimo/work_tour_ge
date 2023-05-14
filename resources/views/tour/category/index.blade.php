@@ -108,13 +108,13 @@
             <div class="row"> 
                @foreach($tours as $tour)
                <div class="col-md-4 mt-4">
-                  <div ><img style="height: 300px; border-top-right-radius:25px; border-top-left-radius:25px" src="{{asset('images/'.$tour->image)}}" class="services_img mb-3"></div>
+                  <div ><a href="{{route('tour_category_tour', $tour->id)}}"><img style="height: 300px; border-top-right-radius:25px; border-top-left-radius:25px" src="{{asset('images/'.$tour->image)}}" class="services_img mb-3"></a></div>
                   <div style="background-color: rgba(244, 237, 237, 0.4); border-top-left-radius: 25px; border-top-right-radius: 25px;">
                      <h1 class="text-truncate" style="padding-left: 5%; padding-bottom:20px;">{{$tour->name}}</h1>
                   </div>
                   <div class="d-flex pb-3" style="border-bottom-right-radius: 25px; background-color: rgba(244, 237, 237, 0.4); border-bottom-left-radius: 25px; justify-content:space-between">
                      <div class="btn_main pl-2"><a href="{{route('tour_category_tour', $tour->id)}}">О туре</a></div>
-                     <div style="align-self: center;" class="mt-1 pr-4"><h2>{{$tour->price}}₾</h2></div>
+                     <div style="align-self: center;" class="mt-1 pr-4 text-truncate "><h2>{{$tour->price != 'Цена договорная' ? $tour->price : 'Цена догов...'}}</h2></div>
                   </div>
                </div>
                @endforeach

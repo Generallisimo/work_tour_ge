@@ -90,7 +90,7 @@
                <h4 class="mt-2">Вид тура</h4>
                <p style="margin: 0;">{{$tour->category->name}}</p>
                <h4 class="mt-2">Стоимость тура</h4>
-               <p style="margin: 0;">{{$tour->price}}₾</p>
+               <p class="text-truncate" style="margin: 0;">{{$tour->price}}</p>
             </div>
             <div>
                <h4>Что входит в стоимость тура:</h4>

@@ -48,7 +48,7 @@
                     <td>{{$item->name}}</td>
                     <td>{!! $item->description !!}</td>
                     <td><img style="width: 160px;" src="{{asset('images/'.$item->image)}}" alt=""></td>
-                    <td>₾{{$item->price}}</td>
+                    <td>{{$item->price}}</td>
                     <td>{{$item->day->name}}</td>
                     <td>{{$item->category->name}}</td>
                     <td>

@@ -1018,7 +1018,7 @@ button {
 }
 .blog-bg-img{
     position: absolute;
-    top: 3200;
+    top: 3300;
     left: 0; 
     z-index: -100;
 }
@@ -1046,19 +1046,3 @@ button {
     color: #ffffff;
     background-color: #2b2278;
 }
-
-@media (max-width: 500px) {
-    .blog-bg-img {
-        top: 5550px;
-    }
-}
-@media (max-width: 380px) {
-    .blog-bg-img {
-      top: 5700px;
-    }
-  }
-@media (max-width: 350px) {
-    .blog-bg-img {
-      top: 6100px;
-    }
-  }

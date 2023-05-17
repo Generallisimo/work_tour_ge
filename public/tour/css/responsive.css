@@ -7,6 +7,9 @@
     .header-search {
         padding: 15px 0px;
     }
+    .blog-bg-img {
+        top: 3550px;
+    }
 }
 
 
@@ -79,12 +82,14 @@
     #collapseFilter.d-md-block {
         padding: 30px 0px;
     }
+    
 }
 
 
 /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+
     .cart-content-right {
         padding-bottom: 5px;
     }

@@ -149,26 +149,47 @@
    </div>
    <!-- choose section start -->
    <div class="choose_section layout_padding">
-      <div class="container" style="justify-content: center;">
+      <div class="container " style="justify-content: center;">
          <h1 class="choose_taital"> Варианты туров </h1>
-         
-         <div style="">
-            <div class="newsletter_box" style="background-color:white">
-               <h1><i class="fas fa-hiking"></i> Индивидуальные туры</h1>
+         <div class="d-flex">
+            <div class="col-md-6" >
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-hiking"></i> Индивидуальные </h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-users"></i> Групповые</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-horse"></i> Верховые</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-motorcycle"></i> Пешие</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-heart"></i> Венчание</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-place-of-worship"></i> Паломнические</h1>
+               </div>
             </div>
-            <div class="newsletter_box" style="background-color:white">
-               <h1><i class="fas fa-users"></i> Групповые туры</h1>
+            <div class="col-md-6" >
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-mountain"></i> Джипинг</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-shopping-bag"></i> Шопинг</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-motorcycle"></i> Поездки на мотоциклах</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-chalkboard-teacher"></i> Мастер классы</h1>
+               </div>
+               <div class="newsletter_box" style="background-color:white">
+                  <h1><i class="fas fa-wine-glass-alt"></i> Винные</h1>
+               </div>
             </div>
-            <div class="newsletter_box" style="background-color:white">
-               <h1><i class="fas fa-mountain"></i> Поездки на джипах</h1>
-            </div>
-            <div class="newsletter_box" style="background-color:white">
-               <h1><i class="fas fa-motorcycle"></i> Поездки на мотоциклах</h1>
-            </div>
-            <div class="newsletter_box" style="background-color:white">
-               <h1><i class="fas fa-heart"></i> Венчание</h1>
          </div>
-      </div>
       </div>
    </div>
    <div class="container" >

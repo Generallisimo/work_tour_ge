@@ -10,7 +10,7 @@
                <div class="logo_mobile"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a></div>
                <div class="d-block">
                   <h2 style="color:white; " class="mt-2">Georgia in Tour</h2>
-                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
                   <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                </a>
                <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
@@ -39,7 +39,7 @@
             <div style="display: block;">
                <div class="logo"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a>
                   <h2 style="color:white;" class="mt-2">Georgia in Tour</h2>
-                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
                        <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                     </a>
                     <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">

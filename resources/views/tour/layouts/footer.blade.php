@@ -5,7 +5,7 @@
             <h1 style="color: white; font-size:26px;">Почувствуйте настоящую Грузию вместе с Georgia In Tour</h1>
          </div>
          <div class="location_main">
-            <div class="call_text"><a href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0"><img width="40px" style="border-radius: 70px;" src="images/w2.png"></a>  <a style="color: white; font-size:22px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0">georgiain_tour</a></div>
+            <div class="call_text"><a href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0"><img width="40px" style="border-radius: 70px;" src="images/w2.png"></a>  <a style="color: white; font-size:22px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0">georgiain_tour</a></div>
             <div class="call_text"><a href="https://t.me/georgiaintour"><img width="40px" class="" style="border-radius: 70px;" src="images/tg1.png"></a>  <a style="color: white; font-size:22px;" href="https://t.me/georgiaintour">georgiain_tour</a></div>
             <div class="call_text mb-3">
                <a href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">

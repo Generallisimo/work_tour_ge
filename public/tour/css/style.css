@@ -1049,16 +1049,16 @@ button {
 
 @media (max-width: 500px) {
     .blog-bg-img {
-        top: 5550px;
+        top: 6150px;
     }
 }
 @media (max-width: 380px) {
     .blog-bg-img {
-      top: 5700px;
+      top: 6300px;
     }
   }
 @media (max-width: 350px) {
     .blog-bg-img {
-      top: 6100px;
+      top: 6650px;
     }
   }

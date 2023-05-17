@@ -151,7 +151,7 @@
    <div class="choose_section layout_padding">
       <div class="container " style="justify-content: center;">
          <h1 class="choose_taital"> Варианты туров </h1>
-         <div class="d-flex">
+         <div class="d-flex row">
             <div class="col-md-6" >
                <div class="newsletter_box" style="background-color:white">
                   <h1><i class="fas fa-hiking"></i> Индивидуальные </h1>

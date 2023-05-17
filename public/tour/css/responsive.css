@@ -7,15 +7,16 @@
     .header-search {
         padding: 15px 0px;
     }
-    .blog-bg-img {
-        top: 3550px;
-    }
+    /* .blog-bg-img {
+        top: 3650px;
+    } */
 }
 
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
+
     .logo {
         text-align: center;
     }

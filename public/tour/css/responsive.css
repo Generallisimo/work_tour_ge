@@ -294,7 +294,7 @@
         display: none;
     }
     .header_section {
-        background-image: url(../images/mobile-bg.png);
+        background-image: url(../images/head1.mp4);
         background-size: cover;
         padding: 0px;
     }
@@ -437,7 +437,7 @@
         margin: 0 auto;
     }
     .footer_section {
-        background-image: url(../images/footer-mobile-bg.png);
+        background-image: url(../images/foot1.mp4);
         background-size: cover;
         padding: 50px 0px;
     }

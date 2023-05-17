@@ -1046,3 +1046,19 @@ button {
     color: #ffffff;
     background-color: #2b2278;
 }
+
+@media (max-width: 500px) {
+    .blog-bg-img {
+        top: 5550px;
+    }
+}
+@media (max-width: 380px) {
+    .blog-bg-img {
+      top: 5700px;
+    }
+  }
+@media (max-width: 350px) {
+    .blog-bg-img {
+      top: 6100px;
+    }
+  }

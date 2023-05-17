@@ -207,8 +207,8 @@
          </div>
          <div class="col-sm ">
             <h3>Что не входит в наши туры:</h3>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Не включены международные перелёты</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Не включена страховка на здоровье</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Международные перелёты</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Страховка на здоровье</h5>
          </div>
       </div>
    </div>

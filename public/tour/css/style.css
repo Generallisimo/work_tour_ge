@@ -1047,18 +1047,29 @@ button {
     background-color: #2b2278;
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 820px) {
+    .blog-bg-img {
+        top: 3500px;
+    }
+}
+@media (max-width: 414px) {
     .blog-bg-img {
         top: 6150px;
     }
 }
+@media (max-width: 400px) {
+    .blog-bg-img {
+      top: 6300px;
+    }
+  }
 @media (max-width: 380px) {
     .blog-bg-img {
       top: 6300px;
     }
   }
-@media (max-width: 350px) {
+@media (max-width: 361px) {
     .blog-bg-img {
-      top: 6650px;
+      top: 6450px;
     }
   }

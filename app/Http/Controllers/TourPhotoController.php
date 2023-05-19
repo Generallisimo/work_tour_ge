@@ -10,6 +10,7 @@ class TourPhotoController extends Controller
 {
     public function TourPhoto(){
         $tour = Tour::all()->reverse();
+        // console.log();
         return view('admin/photos/index', compact('tour'));
     }
     public function TourPhotoAddShow($id){

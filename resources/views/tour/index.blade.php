@@ -1,22 +1,23 @@
 @extends('tour.layouts.master')
 @section('title', 'Tour')
 @section('content')
+<script src="js/index.js"></script>
 <img class="blog-bg-img" style="width: 100%;" src="images/md.png" alt="">
    <!-- header section start -->
-   <div class="header_section" style="max-height: 800px;">
+   <div class="header_section video_src_head" style="max-height: 800px;">
       <div class="header_main">
          <div class="mobile_menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <div class="logo_mobile"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a></div>
                <div class="d-block">
                   <h2 style="color:white; " class="mt-2">Georgia in Tour</h2>
-                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <a style="padding:5px;" href="{{route('render_social', ['id'=>'whatsapp'])}}" class="mr-2 ">
                   <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                </a>
-               <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+               <a style="padding:5px;" href="{{route('render_social', ['id'=>'telegram'])}}" class="mr-2 ">
                   <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
                </a>
-               <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+               <a class="" style="padding:5px;" href="{{route('render_social', ['id'=>'instagram'])}}">
                   <img width="40px" style="border-radius: 70px;" src="images/in2.png">
                </a>
                </div>
@@ -39,13 +40,13 @@
             <div style="display: block;">
                <div class="logo"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a>
                   <h2 style="color:white;" class="mt-2">Georgia in Tour</h2>
-                  <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <a style="padding:5px;" href="{{route('render_social', ['id'=>'whatsapp'])}}" class="mr-2 ">
                        <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                     </a>
-                    <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+                    <a style="padding:5px;" href="{{route('render_social', ['id'=>'telegram'])}}" class="mr-2 ">
                        <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
                     </a>
-                    <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                    <a class="" style="padding:5px;" href="{{route('render_social', ['id'=>'instagram'])}}">
                        <img width="40px" style="border-radius: 70px;" src="images/in2.png">
                     </a>
                </div>
@@ -74,6 +75,10 @@
          </div>
       </div>
       <!-- banner section end -->
+      <video id="video-element" autoplay loop muted>
+         <source id="video-source" src="/tour/images/head.mp4" type="video/mp4">
+         Ваш браузер не поддерживает воспроизведение видео.
+      </video>
    </div>
    <!-- header section end -->
    <!-- services section start -->
@@ -141,7 +146,7 @@
             <div class="col-md-6">
                <div class="about_taital_main">
                   <h1 class="about_taital">Наши гиды</h1>
-                  <p class="about_text">Наши гиды - профессионалы своего дела, которые обладают многолетним опытом работы и являются членами гильдии гидов. Они знают все местные достопримечательности, культурные особенности и исторические тайны, и смогут рассказать о них с увлечением и убедительностью. Наши гиды - настоящие эрудиты, обладающие глубокими знаниями о Грузии и ее народе. Кроме того, они свободно разговаривают на русском, турецком, грузинском и английском языках, что позволяет нашим гостям почувствовать себя уверенно и комфортно в любой ситуации. Наши гиды - ваш надежный друг и проводник в увлекательном путешествии по Грузии.</p>
+                  <p class="about_text">Наши гиды - профессионалы своего дела, которые обладают многолетним опытом работы и являются членами гильдии гидов. Они знают все местные достопримечательности, культурные особенности и исторические тайны, и смогут рассказать о них с увлечением и убедительностью. Наши гиды - настоящие эрудиты, обладающие глубокими знаниями о Грузии и ее народе. Кроме того, они свободно разговаривают на русском, турецком, грузинском и английском языках, что позволяет нашим гостям почувствовать себя уверенно и комфортно в любой ситуации. Наши гиды - надежные друзья и проводник в увлекательном путешествии по Грузии.</p>
                </div>
             </div>
          </div>
@@ -197,13 +202,14 @@
       <div class="row flex-wrap mb-5" style="border-radius: 15px; border:1px solid #6e6e6e; padding:30px; background-color:white">
          <div class="col-sm ">
             <h3>Что входит в наши туры:</h3>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Опытные гидов-историков, владеющих несколькими языками и историческими знаниями</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Опытные гиды-историки, владеющие несколькими языками </h5>
             <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Собственный автопарк, который обеспечивает комфортную и безопасную поездку</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Все билеты и приемы еды входят в стоимость тура, а также компания оплачивает винные дегустации</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Уникальные половнические 15-дневные туры</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Предоставление индивидуальных маршрутов по вашему выбору в течение 12 часов</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Организация гостиниц и трансфера из любого города или аэропорта.</h5>
-            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Бесплатное вино в дорогу для каждого клиента.</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Входные билеты</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Завтраки и ужины (традиционные застолья)</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Винные дегустации</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Размещение в двухместных номерах</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Индивидуальные маршруты по вашему выбору в течение 24 часов</h5>
+            <h5 style="border:1px solid #6e6e6e;color:black;" type="text" class="form-control mt-1">Вино в дорогу</h5>
          </div>
          <div class="col-sm ">
             <h3>Что не входит в наши туры:</h3>
@@ -255,7 +261,7 @@
                            </div>
                         </div>
                         <div class="col-md-6 align-items-center">
-                           <p class="lorem_text" style="height: 300px;">Я осталася доволен туром. Мы посетили невероятно красивые места, попробовали лучшие блюда грузинской кухни и получили неоценимый опыт погружения в местную культуру. Большое спасибо georgiaintour за такие впечатления. </p>
+                           <p class="lorem_text" style="height: 300px;">Я осталась довольна туром. Мы посетили невероятно красивые места, попробовали лучшие блюда грузинской кухни и получили неоценимый опыт погружения в местную культуру. Большое спасибо georgiaintour за такие впечатления. </p>
                         </div>
                      </div>
                   </div>

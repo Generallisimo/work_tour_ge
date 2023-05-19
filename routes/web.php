@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,7 @@ Route::group(['prefix'=>'tour'], function(){
     Route::get('/home', [\App\Http\Controllers\TourController::class, 'Tour'])->name('tour_home');
     Route::get('/tour', [\App\Http\Controllers\TourController::class, 'TourCategory'])->name('tour_category');
     Route::get('/tour{id}', [\App\Http\Controllers\TourController::class, 'TourCategoryTour'])->name('tour_category_tour');
+    Route::get('/social{id}', [\App\Http\Controllers\SocialController::class, 'FacebookRender'])->name('render_social');
 });
 Route::get('/auth', function(){
     return view('admin/auth');
@@ -51,9 +53,12 @@ Route::group(['middleware'=>['role:admin'], 'prefix'=>'admin'], function(){
     Route::get('/delete{id}', [\App\Http\Controllers\TourPhotoController::class, 'TourPhotoDeleteShow'])->name('tour_photo_delete_show');
     Route::delete('/delete{id}', [\App\Http\Controllers\TourPhotoController::class, 'TourPhotoDelete'])->name('tour_photo_delete');
     Route::put('/days_update{id}', [\App\Http\Controllers\AdminDaysController::class, 'AdminDaysUpdate'])->name('admin_days_update');
+
+    // Route::post('/site{id}')
 });
 
 Route::get('/', function () {
+    // Log::info('Hello');
     return redirect()->route('tour_home');
 });
 

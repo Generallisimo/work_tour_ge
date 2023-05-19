@@ -1,19 +1,25 @@
    <!-- footer section start -->
-   <div class="footer_section layout_padding " >
-      <div class="container">
-         <div style="text-align: center;margin-top:100px">
+   <div class="footer_section layout_padding "  >
+      <div class="container" >
+         <div class="div_footer" style="text-align: center;">
             <h1 style="color: white; font-size:26px;">Почувствуйте настоящую Грузию вместе с Georgia In Tour</h1>
          </div>
          <div class="location_main">
-            <div class="call_text"><a href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0"><img width="40px" style="border-radius: 70px;" src="images/w2.png"></a>  <a style="color: white; font-size:22px;" href="https://api.whatsapp.com/send/?phone=%2B79222160721&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0">georgiain_tour</a></div>
-            <div class="call_text"><a href="https://t.me/georgiaintour"><img width="40px" class="" style="border-radius: 70px;" src="images/tg1.png"></a>  <a style="color: white; font-size:22px;" href="https://t.me/georgiaintour">georgiain_tour</a></div>
+            <div class="call_text"><a href="{{route('render_social', ['id'=>'whatsapp'])}}"><img width="40px" style="border-radius: 70px;" src="images/w2.png"></a>  <a style="color: white; font-size:22px;" href="{{route('render_social', ['id'=>'whatsapp'])}}">georgiain_tour</a></div>
+            <div class="call_text"><a href="{{route('render_social', ['id'=>'telegram'])}}"><img width="40px" class="" style="border-radius: 70px;" src="images/tg1.png"></a>  <a style="color: white; font-size:22px;" href="{{route('render_social', ['id'=>'telegram'])}}">georgiain_tour</a></div>
             <div class="call_text mb-3">
-               <a href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+               <a href="{{route('render_social', ['id'=>'instagram'])}}">
                   <img width="40px" style="border-radius: 70px;" src="images/in1.png">
                </a>
-               <a style="color: white; font-size:22px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">georgiain_tour</a>
+               <a style="color: white; font-size:22px;" href="{{route('render_social', ['id'=>'instagram'])}}">georgiain_tour</a>
             </div>
          </div>
+      </div>
+      <div class="video_footer_wrapper">
+         <video id="video-element_footer" autoplay loop muted>
+            <source id="video-source_footer" src="/tour/images/foot.mp4" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+         </video>
       </div>
    </div>
    <!-- footer section end -->

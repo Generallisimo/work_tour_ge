@@ -12,13 +12,13 @@
                <div class="logo_mobile"><a href="{{route('tour_home')}}"><img style="width: 70px; border-radius:50px;" src="images/tour.jpeg"></a></div>
                <div class="d-block">
                <h2 style="color:white; " class="mt-2">Georgia in Tour</h2>
-               <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+               <a style="padding:5px;" href="{{route('render_social', ['id'=>'whatsapp'])}}" class="mr-2 ">
                   <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                </a>
-               <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+               <a style="padding:5px;" href="{{route('render_social', ['id'=>'telegram'])}}" class="mr-2 ">
                   <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
                </a>
-               <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+               <a class="" style="padding:5px;" href="{{route('render_social', ['id'=>'instagram'])}}">
                   <img width="40px" style="border-radius: 70px;" src="images/in2.png">
                </a>
                </div>
@@ -42,13 +42,13 @@
                 <div class="logo"><a href="{{route('tour_home')}}">
                   <img style="width: 70px; border-radius:50px;" src="images/tour.jpeg">
                   <h2 style="color:white;" class="mt-2">Georgia in Tour</h2>
-                    <a style="padding:5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                    <a style="padding:5px;" href="{{route('render_social', ['id'=>'whatsapp'])}}" class="mr-2 ">
                        <img width="40px" style="border-radius: 70px;" src="images/w3.png">
                     </a>
-                    <a style="padding:5px;" href="https://t.me/georgiaintour" class="mr-2 ">
+                    <a style="padding:5px;" href="{{route('render_social', ['id'=>'telegram'])}}" class="mr-2 ">
                        <img width="75px" class="" style="border-radius: 70px;" src="images/tg2.png">
                     </a>
-                    <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                    <a class="" style="padding:5px;" href="{{route('render_social', ['id'=>'instagram'])}}">
                        <img width="40px" style="border-radius: 70px;" src="images/in2.png">
                     </a>
                </div>
@@ -61,6 +61,10 @@
             </div>
          </div>
       </div>
+      <video id="video-element" autoplay loop muted>
+         <source id="video-source" src="/tour/images/head1.mp4" type="video/mp4">
+         Ваш браузер не поддерживает воспроизведение видео.
+      </video>
    </div>
 
 
@@ -106,13 +110,13 @@
             <div class="d-block" style="text-align: center;">
                <h1 class="text-truncate">Связаться по турам</h1>
                <div class=" ml-3 d-flex" >
-                  <a style="padding:5px; margin-top: 5px;" href="https://api.whatsapp.com/send/?phone=%2B995595201035&text=Добрый+день%21+Подскадите+по+поводу+экскурсии+в+Грузии%21&type=phone_number&app_absent=0" class="mr-2 ">
+                  <a style="padding:5px; margin-top: 5px;" href="{{route('render_social', ['id'=>'whatsapp'])}}" class="mr-2 ">
                      <img width="45px" src="images/ww1.png">
                   </a>
-                  <a style="padding:5px; margin-top: 4px;"" href="https://t.me/georgiaintour" class="mr-2 ">
+                  <a style="padding:5px; margin-top: 4px;"" href="{{route('render_social', ['id'=>'telegram'])}}" class="mr-2 ">
                      <img width="50px" class="" src="images/tt1.png">
                   </a>
-                  <a class="" style="padding:5px;" href="https://www.instagram.com/georgiain_tour/?igshid=ZDdkNTZiNTM%3D">
+                  <a class="" style="padding:5px;" href="{{route('render_social', ['id'=>'instagram'])}}">
                      <img width="55px" src="images/ii1.png">
                   </a>
                </div>
@@ -121,7 +125,7 @@
       </div>
       <div class="container" style=" text-align: center; margin-top: 100px;margin-bottom:30px">
          
-      <h1>Инетресные факты о туре:</h1>
+      <h1>Интересные факты о туре:</h1>
             <div class="mt-2" style="text-align: start;">
                <div class="overflow-auto max-height" style="max-height:375px; height:375px; border:1px solid rgb(231, 227, 227); border-radius:15px; background-color: rgb(254, 251, 251);">   
                   <div  style="padding-left:5px">

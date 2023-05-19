@@ -1,5 +1,5 @@
 @extends('tour.layouts.master')
-@section('title', 'Tour')
+@section('title', 'Georgia in Tour')
 @section('content')
 <script src="js/index.js"></script>
 <img class="blog-bg-img" style="width: 100%;" src="images/md.png" alt="">

@@ -220,7 +220,9 @@
    </div>
    <!-- choose section end -->
 
-   
+   <!-- <div class="container" style="text-align:center">
+      <h1>Отдых без границ - все включено, ничего не оплачивайте!</h1>
+   </div> -->
    <!-- client section start -->
    <div class="client_section layout_padding">
       <div class="container">

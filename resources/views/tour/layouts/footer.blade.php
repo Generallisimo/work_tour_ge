@@ -1,6 +1,6 @@
    <!-- footer section start -->
    <div class="footer_section layout_padding "  >
-      <div class="container" >
+      <div class="container mb-5" >
          <div class="div_footer" style="text-align: center;">
             <h1 style="color: white; font-size:26px;">Почувствуйте настоящую Грузию вместе с Georgia In Tour</h1>
          </div>
@@ -13,6 +13,9 @@
                </a>
                <a style="color: white; font-size:22px;" href="{{route('render_social', ['id'=>'instagram'])}}">georgiain_tour</a>
             </div>
+         </div>
+         <div  style="text-align: center;">
+            <h2 class="h2_fot" style="color:white;">© 2023 Georgia in Tour. Данный лендинг предназначен исключительно для информационных целей и не является платежным порталом или интернет-магазином.</h2>
          </div>
       </div>
       <div class="video_footer_wrapper">

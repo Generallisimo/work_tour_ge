@@ -290,22 +290,26 @@
       </div>
    </div>
    <!-- client section start -->
-   @endsection
    <script src="https://kit.fontawesome.com/765d268603.js" crossorigin="anonymous"></script>
    <style>
-
 .div_footer{
-    margin-top:270px
+    margin-top:250px
 }   
 .h2_fot{
     margin-top:200px
 } 
+.blog-bg-img{
+   position: absolute;
+   top: 3300px;
+   left: 0; 
+   z-index: -100;
+}
    @media (max-width: 820px) {
     .blog-bg-img {
         top: 3600px;
     }
     .h2_fot{
-        font-size: 16px;
+        font-size: 14px;
         margin-top:0px
     }
     .div_footer{
@@ -375,6 +379,9 @@
     .blog-bg-img {
       top: 6500px;
     }
+    .h2_fot{
+        font-size: 12px;
+    }
   }
 @media (max-width: 338px) {
     .blog-bg-img {
@@ -394,6 +401,9 @@
 @media (max-width: 310px) {
     .blog-bg-img {
       top: 6750px;
+    }
+    .h2_fot{
+        font-size: 10px;
     }
   }
 @media (max-width: 300px) {
@@ -423,3 +433,4 @@
   }
 
 </style>
+   @endsection

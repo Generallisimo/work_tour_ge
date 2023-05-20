@@ -1055,7 +1055,7 @@ button {
 }
 .blog-bg-img{
     position: absolute;
-    top: 3300;
+    top: 3300px;
     left: 0; 
     z-index: -100;
 }

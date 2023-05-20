@@ -150,4 +150,135 @@
       </div>
    </div>
 
+   <style>
+.div_footer{
+    margin-top:270px
+}   
+.h2_fot{
+    margin-top:200px
+} 
+
+   @media (max-width: 820px) {
+    .blog-bg-img {
+        top: 3600px;
+    }
+    .h2_fot{
+        font-size: 16px;
+        margin-top:0px
+    }
+    .div_footer{
+        margin-top:120px;
+        font-size:10px;
+    }        
+    .footer_section {
+        height: 600px;
+    }
+}
+@media (max-width: 920px) {
+    .blog-bg-img {
+        top: 3500px;
+    }
+}
+@media (max-width: 767px) {
+    .blog-bg-img {
+        top: 6100px;
+    }
+}
+@media (max-width: 600px) {
+    .blog-bg-img {
+        top: 6050px;
+    }
+}
+@media (max-width: 575px) {
+    .blog-bg-img {
+        top: 6000px;
+    }
+}
+@media (max-width: 560px) {
+    .blog-bg-img {
+        top: 6000px;
+    }
+}
+@media (max-width: 485px) {
+    .blog-bg-img {
+        top: 6000px;
+    }
+}
+@media (max-width: 450px) {
+    .blog-bg-img {
+        top: 6150px;
+    }
+}
+@media (max-width: 414px) {
+    .blog-bg-img {
+        top: 6150px;
+    }
+}
+@media (max-width: 400px) {
+    .blog-bg-img {
+      top: 6300px;
+    }
+  }
+@media (max-width: 380px) {
+    .blog-bg-img {
+      top: 6300px;
+    }
+  }
+@media (max-width: 361px) {
+    .blog-bg-img {
+      top: 6450px;
+    }
+  }
+@media (max-width: 350px) {
+    .blog-bg-img {
+      top: 6500px;
+    }
+  }
+@media (max-width: 338px) {
+    .blog-bg-img {
+      top: 6550px;
+    }
+  }
+@media (max-width: 326px) {
+    .blog-bg-img {
+      top: 6600px;
+    }
+  }
+@media (max-width: 315px) {
+    .blog-bg-img {
+      top: 6650px;
+    }
+  }
+@media (max-width: 310px) {
+    .blog-bg-img {
+      top: 6750px;
+    }
+  }
+@media (max-width: 300px) {
+    .blog-bg-img {
+      top: 6800px;
+    }
+  }
+@media (max-width: 297px) {
+    .blog-bg-img {
+      top: 6900px;
+    }
+  }
+@media (max-width: 292px) {
+    .blog-bg-img {
+      top: 6950px;
+    }
+  }
+@media (max-width: 287px) {
+    .blog-bg-img {
+      top: 7050px;
+    }
+  }
+@media (max-width: 284px) {
+    .blog-bg-img {
+      top: 7150px;
+    }
+  }
+
+</style>
 @endsection
